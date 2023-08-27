@@ -1,1 +1,2 @@
-# Whimsical Education
+#Elevator Pitch 
+To joke or to word. Our research website solves the problem of having to guess the definition while also having a litte bit of fun by being able to read a joke. Our motivation is to create a fun interactive website and also to practice our newly learned coding skills in a group setting. We plan on using a Webster dictionary api and a joke api to help us create our website. We will be also using tailwind css to style our website to make it more appealing. Users should prioritize using our website for simpliticty of use and to make their research more interesting and fun.
