@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Word or Joke</title>
+  </head>
+  <body class="bg-gray-800 text-orange-600 ">
+    <div>
+      <!--Content wrapper-->
+      <div>
+        <nav>
+          <div>
+            <h1 class="font-bold text-4xl p-4">
+              <a href="/">Work or Joke</a>
+            </h1>
+          </div>
+          <ul>
+            <a href="#">
+              <li><span>Home</span></li>
+            </a>
+          </ul>
+          <ul>
+            <a href="#">
+              <li><span>Word</span></li>
+            </a>
+          </ul>
+          <ul>
+            <a href="#">
+              <li><span>About</span></li>
+            </a>
+          </ul>
+          <ul>
+            <a href="#">
+              <li><span>Contact</span></li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <!--End Nav Bar-->
+
+      <main class="px-16 py-6">
+        <div class="my-5">
+          <a class="mr-5 px-3 py-1 border-2 text-center rounded-full bg-amber-50 font-semibold" href="#">Log in</a>
+          <a class="mr-5  px-3 py-1 border-2 text-center rounded-full bg-amber-50 font-semibold" href="#">Sign up</a>
+        </div>
+
+        <header>
+          <h2 class="text-6xl font-semibold">Jokes</h2>
+          <h3 class="text-3xl font-semibold border-b">Funny code related one liners</h3>
+        </header>
+        <div>
+          <h4 class="font-bold mt-12 pb-4">Ready for a joke?</h4>
+          <div class="lg:w-4/5 xl:w-3/5 m-auto mt-8 p-10 border rounded-3xl">
+            <!--card go here-->
+            <img class="m-10" src="assets/Laughing-Emoji.png" alt="laughing emoji" />
+            <div>
+              <p class="text-orange-400 text-sm sm:text-lg md:text-xl lg:text-2xl" id="jokeContainer"></p>
+              <button class="rounded-full py-2 px-4 font-bold text-xl border-4 mt-8 tracking-wider" id="btn">Click for Joke</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
