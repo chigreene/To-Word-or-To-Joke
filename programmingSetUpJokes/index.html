@@ -58,9 +58,17 @@
           <div class="lg:w-3/5 xl:w-2/5 m-auto mt-8 p-10 border rounded-3xl">
             <!-- card go here-->
             <img class="m-10 " src="assets/Laughing-Emoji.png" alt="laughing emoji" />
-            <div>
-              <p class="text-orange-400 text-sm sm:text-lg md:text-xl lg:text-2xl" id="jokeContainer"></p>
-              <button class="rounded-full py-2 px-4 font-bold text-xl border-4 mt-8 tracking-wider" id="btn">Click for Joke</button>
+            <div id="jokeContainer" class="text-orange-400 text-sm sm:text-lg md:text-xl lg:text-2xl"></div>
+            <div id="deliveryContainer" class="hidden text-orange-400 text-sm sm:text-lg md:text-xl lg:text-2xl"></div>
+            <div class="flex flex-row justify-evenly">
+              <div >
+                <p  ></p>
+                <button class="rounded-full py-2 px-4 font-bold text-xl border-4 mt-8 tracking-wider" id="btn">Click for Joke</button>
+              </div>
+              <div>
+                <p class="text-orange-400 text-sm sm:text-lg md:text-xl lg:text-2xl" id="jokeContainer"></p>
+                <button class="rounded-full py-2 px-4 font-bold text-xl border-4 mt-8 tracking-wider" id="showPunchLineBtn">Show Punch Line</button>
+              </div>
             </div>
           </div>
         </div>

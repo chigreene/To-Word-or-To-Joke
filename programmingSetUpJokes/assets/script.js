@@ -1,9 +1,11 @@
 var jokeContainer = document.getElementById('jokeContainer')
+var deliveryContainer = document.getElementById('deliveryContainer')
 var btn = document.getElementById('btn');
 var lastJokeBtn = document.querySelector('#lastJokeBtn')
-var saveBtn = document.querySelector('#saveBtn')
+var showPunchLineBtn = document.querySelector('#showPunchLineBtn')
+var showPunchLine = document.querySelector('#showPunchLine')
 var lastJokeDiv = document.querySelector('#lastJoke')
-var array = JSON.parse(localStorage.getItem('jokeHistory')) || [];
+var array = JSON.parse(localStorage.getItem('setupHistory')) || [];
 var deliveryArray = JSON.parse(localStorage.getItem('deliveryJokeHistory')) || [];
 
 function makeJoke(){
@@ -17,16 +19,17 @@ function makeJoke(){
         })
         .then(function (data){
             jokeContainer.textContent = ''
+            deliveryContainer.textContent = ''
             var joke = document.createElement('p');
             var delivery = document.createElement('p');
             delivery.textContent = data.delivery
             joke.textContent = data.setup
             jokeContainer.append(joke)
-            joke.append(delivery)
+            deliveryContainer.append(delivery)
 
-            jokeHistory = data.setup
+            setupHistory = data.setup
             deliveryHistory = data.delivery
-            saveToArray(jokeHistory)
+            saveToArray(setupHistory)
             saveDeliveryToArray(deliveryHistory)
         })
 }
@@ -35,7 +38,7 @@ function makeJoke(){
 function saveToArray(joke) {
     if(!array.includes(joke)){
         array.push(joke);
-        localStorage.setItem('jokeHistory', JSON.stringify(array));
+        localStorage.setItem('setupHistory', JSON.stringify(array));
     }
 }
 // saving joke to delivery array
@@ -50,7 +53,7 @@ function saveDeliveryToArray(joke) {
 
 var lastJokePara = document.createElement('p');
 function renderHistory() {
-    var localHistoryArray = JSON.parse(localStorage.getItem('jokeHistory'));
+    var localHistoryArray = JSON.parse(localStorage.getItem('setupHistory'));
     
     lastJokePara.textContent = '';
     lastJokePara.textContent = localHistoryArray[array.length-2];
@@ -68,17 +71,25 @@ function renderDeliveryHistory() {
     lastJokeDiv.append(lastJokeDeliveryPara);
 }
 
+showPunchLineBtn.addEventListener('click', function(event){
+    event.preventDefault()
+    deliveryContainer.classList.remove('hidden')
+})
+
 btn.addEventListener('click',function(event){
     event.preventDefault()
+    if(array.length>5){
+        array.shift()
+    }
+    deliveryContainer.classList.add('hidden')
     makeJoke()
 })
 
+
+
 lastJokeBtn.addEventListener('click', function(event){
     event.preventDefault()
-    // if(array.length>5){
-    //     array.shift()
-    // }
-    
+    deliveryContainer.classList.remove('hidden')
     renderHistory()
     renderDeliveryHistory()
 })
