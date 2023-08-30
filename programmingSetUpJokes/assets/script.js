@@ -1,11 +1,13 @@
 var jokeContainer = document.getElementById('jokeContainer')
 var btn = document.getElementById('btn');
 var lastJokeBtn = document.querySelector('#lastJokeBtn')
+var saveBtn = document.querySelector('#saveBtn')
 var lastJokeDiv = document.querySelector('#lastJoke')
-
+var array = JSON.parse(localStorage.getItem('jokeHistory')) || [];
+var deliveryArray = JSON.parse(localStorage.getItem('deliveryJokeHistory')) || [];
 
 function makeJoke(){
-    var url = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,racist,sexist,explicit&type=single';
+    var url = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart';
 
     
 
@@ -14,31 +16,69 @@ function makeJoke(){
             return response.json();
         })
         .then(function (data){
-            console.log(data)
             jokeContainer.textContent = ''
-            console.log(data)
             var joke = document.createElement('p');
-            joke.textContent = data.joke
+            var delivery = document.createElement('p');
+            delivery.textContent = data.delivery
+            joke.textContent = data.setup
             jokeContainer.append(joke)
-            jokeHistory = data.joke
-            localStorage.setItem('jokeHistory', jokeHistory)
+            joke.append(delivery)
+
+            jokeHistory = data.setup
+            deliveryHistory = data.delivery
+            saveToArray(jokeHistory)
+            saveDeliveryToArray(deliveryHistory)
         })
 }
 
-var lastJokePara = document.createElement('p')
+// Saving joke to setup array
+function saveToArray(joke) {
+    if(!array.includes(joke)){
+        array.push(joke);
+        localStorage.setItem('jokeHistory', JSON.stringify(array));
+    }
+}
+// saving joke to delivery array
+function saveDeliveryToArray(joke) {
+    if(!deliveryArray.includes(joke)){
+        deliveryArray.push(joke);
+        localStorage.setItem('deliveryJokeHistory', JSON.stringify(deliveryArray));
+    }
+}
 
-btn.addEventListener('click',function(){
-        makeJoke()
+// rendering last joke setup
+
+var lastJokePara = document.createElement('p');
+function renderHistory() {
+    var localHistoryArray = JSON.parse(localStorage.getItem('jokeHistory'));
+    
+    lastJokePara.textContent = '';
+    lastJokePara.textContent = localHistoryArray[array.length-2];
+    lastJokeDiv.append(lastJokePara);
+}
+
+// render last joke delivery
+
+var lastJokeDeliveryPara = document.createElement('p');
+function renderDeliveryHistory() {
+    var deliveryLocalHistoryArray = JSON.parse(localStorage.getItem('deliveryJokeHistory'));
+    
+    lastJokeDeliveryPara.textContent = '';
+    lastJokeDeliveryPara.textContent = deliveryLocalHistoryArray[deliveryArray.length-2];
+    lastJokeDiv.append(lastJokeDeliveryPara);
+}
+
+btn.addEventListener('click',function(event){
+    event.preventDefault()
+    makeJoke()
 })
 
 lastJokeBtn.addEventListener('click', function(event){
     event.preventDefault()
-    function lastJoke(){
-        var lastJoke = localStorage.getItem('jokeHistory')
-       
-        lastJokePara.textContent = ''
-        lastJokePara.textContent = lastJoke
-        lastJokeDiv.append(lastJokePara)
-    }
-    lastJoke()
+    // if(array.length>5){
+    //     array.shift()
+    // }
+    
+    renderHistory()
+    renderDeliveryHistory()
 })

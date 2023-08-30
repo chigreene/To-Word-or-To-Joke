@@ -49,9 +49,9 @@ btn.addEventListener('click',function(event){
 
 lastJokeBtn.addEventListener('click', function(event){
     event.preventDefault()
-    if(array.length>5){
-        array.shift()
-    }
+    // if(array.length>5){
+    //     array.shift()
+    // }
     console.log(array)
     renderHistory()
 })
