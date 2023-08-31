@@ -19,7 +19,7 @@
           </div>
           <div class="font-semibold mr-3">
             <ul>
-              <a href="#">
+              <a href="../ChooseJokeType/index.html">
                 <li><span>Home</span></li>
               </a>
             </ul>
@@ -44,37 +44,37 @@
       <!--End Nav Bar-->
 
       <main class="bg-gray-800 text-orange-600 px-16 py-6">
-        <div class="my-5">
-          <a class="mr-5 px-3 py-1 border-2 text-center rounded-full bg-amber-50 font-semibold" href="#">Log in</a>
-          <a class="mr-5  px-3 py-1 border-2 text-center rounded-full bg-amber-50 font-semibold" href="#">Sign up</a>
+        <div class="mt-10 mb-10">
+          <a class="mr-5 px-3 py-1 border-2 text-center rounded-full bg-amber-50 font-semibold hover:bg-orange-600 hover:text-gray-800 transition ease-in" href="#">Log in</a>
+          <a class="mr-5  px-3 py-1 border-2 text-center rounded-full bg-amber-50 font-semibold hover:bg-orange-600 hover:text-gray-800 transition ease-in" href="#">Sign up</a>
         </div>
 
         <header>
           <h2 class="text-6xl font-semibold">Jokes</h2>
-          <h3 class="text-3xl font-semibold border-b">Funny code related one liners</h3>
+          <h3 class="text-3xl font-semibold border-b">Set Em' Up Knock Em' Down Programming Jokes</h3>
         </header>
         <div class="mb-20">
           <h4 class="font-bold mt-12 pb-4">Ready for a joke?</h4>
-          <div class="lg:w-3/5 xl:w-2/5 m-auto mt-8 p-10 border rounded-3xl">
+          <div class="bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:w-3/5 xl:w-2/5 m-auto mt-8 p-10 border rounded-3xl">
             <!-- card go here-->
-            <img class="m-10 " src="assets/Laughing-Emoji.png" alt="laughing emoji" />
-            <div id="jokeContainer" class="text-orange-400 text-sm sm:text-lg md:text-xl lg:text-2xl"></div>
-            <div id="deliveryContainer" class="hidden text-orange-400 text-sm sm:text-lg md:text-xl lg:text-2xl"></div>
+            <img class="m-auto " src="./assets/giphy.gif" alt="everything is fine" />
+            <div id="jokeContainer" class="text-gray-200 text-sm sm:text-lg md:text-xl lg:text-2xl mb-5"></div>
+            <div id="deliveryContainer" class="hidden text-gray-100 text-sm sm:text-lg md:text-xl lg:text-2xl mb-5"></div>
             <div class="flex flex-row justify-evenly">
               <div >
                 <p  ></p>
-                <button class="rounded-full py-2 px-4 font-bold text-xl border-4 mt-8 tracking-wider" id="btn">Click for Joke</button>
+                <button class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-400 dark:focus:ring-orange-700 transition ease-in tracking-wider" id="btn">Click for Joke</button>
               </div>
               <div>
-                <p class="text-orange-400 text-sm sm:text-lg md:text-xl lg:text-2xl" id="jokeContainer"></p>
-                <button class="rounded-full py-2 px-4 font-bold text-xl border-4 mt-8 tracking-wider" id="showPunchLineBtn">Show Punch Line</button>
+                <p class="text-gray-100 text-sm sm:text-lg md:text-xl lg:text-2xl" id="jokeContainer"></p>
+                <button class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-400 dark:focus:ring-orange-700 transition ease-in tracking-wider" id="showPunchLineBtn">Show Punch Line</button>
               </div>
             </div>
           </div>
         </div>
         <div>
           <h3 class="text-4xl font-semibold mt-20 border-b" id="lastJokeContainer">Need to hear it again???</h3>
-          <button class="mr-5 px-3 py-1 my-10 border-2 text-center rounded-full bg-amber-50 font-semibold" id="lastJokeBtn">RePlay Last Joke</button>
+          <button class="mr-5 px-3 py-1 my-10 border-2 text-center rounded-full bg-amber-50 font-semibold hover:bg-orange-600 hover:text-gray-800 transition ease-in" id="lastJokeBtn">RePlay Last Joke</button>
           <div class="text-xl text-orange-400" id="lastJoke"></div>
         </div>
       </main>
