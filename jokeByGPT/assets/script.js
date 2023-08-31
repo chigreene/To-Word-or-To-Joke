@@ -12,13 +12,13 @@ var submitBtn = document.querySelector('#submitBtn')
 var ranWordContainer = document.querySelector('#ranWordContainer')
 var subRandomBtn = document.querySelector('#subRandomBtn')
 
-modal
-var closeModal = document.querySelector('.close-modal')
-var randomModal = document.querySelector('.randomModal')
-closeModal.addEventListener('click', function(event){
-    event.preventDefault()
-    randomModal.classList.remove('hidden')
-})
+
+// var closeModal = document.querySelector('.close-modal')
+// var randomModal = document.querySelector('.randomModal')
+// closeModal.addEventListener('click', function(event){
+//     event.preventDefault()
+//     randomModal.classList.remove('hidden')
+// })
 
 
 var randomWord = ''
