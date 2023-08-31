@@ -13,12 +13,12 @@ var ranWordContainer = document.querySelector('#ranWordContainer')
 var subRandomBtn = document.querySelector('#subRandomBtn')
 
 
-// var closeModal = document.querySelector('.close-modal')
-// var randomModal = document.querySelector('.randomModal')
-// closeModal.addEventListener('click', function(event){
-//     event.preventDefault()
-//     randomModal.classList.remove('hidden')
-// })
+var closeModal = document.querySelector('.close-modal')
+var randomModal = document.querySelector('.randomModal')
+closeModal.addEventListener('click', function(event){
+    event.preventDefault()
+    randomModal.classList.add('hidden')
+})
 
 
 var randomWord = ''
@@ -34,7 +34,9 @@ function randomWordFunction(){
         })
         .then (function(data){
             console.log(data.word)
-            ranWordContainer.classList.remove('hidden')
+            // ranWordContainer.classList.remove('hidden')
+            rndWordDiv.textContent = ''
+            rndJokeDiv.textContent = ''
             var ranWord = document.createElement('p')
             var randomWord = data.word;
             ranWord.textContent = 'Random Word: ' + data.word
@@ -66,6 +68,7 @@ function randomWordFunction(){
 
 subRandomBtn.addEventListener('click', function(event){
     event.preventDefault
+    randomModal.classList.remove('hidden')
     randomWordFunction()
 })
 
