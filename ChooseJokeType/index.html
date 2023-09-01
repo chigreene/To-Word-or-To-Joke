@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/style.css" />
     <title>Word or Joke</title>
   </head>
@@ -18,22 +19,22 @@
             </h1>
           </div>
           <div class="font-semibold mr-3">
-            <ul>
+            <ul class="hover:text-xl ease-in">
               <a href="../ChooseJokeType/index.html">
                 <li><span>Home</span></li>
               </a>
             </ul>
-            <ul>
+            <ul class="hover:text-xl ease-in">
               <a href="#">
                 <li><span>Word</span></li>
               </a>
             </ul>
-            <ul>
+            <ul class="hover:text-xl ease-in">
               <a href="#">
                 <li><span>About</span></li>
               </a>
             </ul>
-            <ul>
+            <ul class="hover:text-xl ease-in">
               <a href="#">
                 <li><span>Contact</span></li>
               </a>
@@ -45,8 +46,40 @@
 
       <main class="bg-gray-800 text-orange-600 px-16 py-6">
         <div class="my-5 mt-10">
-          <a class="mr-5 px-3 py-1 border-2 text-center rounded-full bg-amber-50 font-semibold hover:bg-orange-600 hover:text-gray-800 transition ease-in" href="#">Log in</a>
-          <a class="mr-5  px-3 py-1 border-2 text-center rounded-full bg-amber-50 font-semibold hover:bg-orange-600 hover:text-gray-800 transition ease-in" href="#">Sign up</a>
+          <a class="mr-5 px-3 py-1 border-2 text-center rounded-full bg-amber-50 font-semibold hover:bg-orange-600 hover:text-gray-800 hover:text-xl transition ease-in" href="#">Log in</a>
+          <a class="mr-5  px-3 py-1 border-2 text-center rounded-full bg-amber-50 font-semibold hover:bg-orange-600 hover:text-gray-800 hover:text-xl transition ease-in" href="#">Sign up</a>
+          <!-- dropdown -->
+          
+          <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="float-right shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Type of Joke <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg></button>
+          <!-- Dropdown menu -->
+          <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-orange-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                <li>
+                  <a href="../punsOneLiner/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pun</a>
+                </li>
+                <li>
+                  <a href="../christmasJokes/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Christmas</a>
+                </li>
+                <li> 
+                  <a href="../spookyJokes/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Spooky</a>
+                </li>
+                <li>
+                  <a href="../jokeByGPT/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">AI Generated</a>
+                </li>
+                <li>
+                  <a href="../miscJokes/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Misc</a>
+                </li>
+                <li>
+                  <a href="../programmingOneLiners/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programming One Liners</a>
+                </li>
+                <li>
+                  <a href="../programmingSetUpJokes/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programming</a>
+                </li>
+              </ul>
+          </div>
+<!-- dropdown -->
         </div>
 
         <header>
@@ -55,7 +88,7 @@
         </header>
         <div class="mb-20">
           <div class="">
-            <div class=" flex flex-row flex-wrap justify-between lg:w-4/5 xl:w-4/5 m-auto mt-20 p-10 border-4 border-orange-400 rounded-3xl">
+            <div class="shadow-xl shadow-white flex flex-row flex-wrap justify-between lg:w-4/5 xl:w-4/5 m-auto mt-20 p-10 border-4 border-orange-400 rounded-3xl">
 <!-- Card break -->
               <div class="flex-auto basis-1/2 bg-white border border-gray-200 rounded-lg shadow bg-gradient-to-r from-violet-500 to-fuchsia-500 dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
@@ -113,6 +146,7 @@
         </div>
       </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
   </body>

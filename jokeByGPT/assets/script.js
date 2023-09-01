@@ -1,5 +1,4 @@
-const key = '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'
-const token = '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'
+const token = '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'
 var punRoot = 'apple'
 
 const ninjaKey = 'IohEAAZnqusKHO7llxCIdw==CwTa8bQlK72a3ruH'
@@ -11,14 +10,16 @@ var inputText = document.querySelector('#inputText')
 var submitBtn = document.querySelector('#submitBtn')
 var ranWordContainer = document.querySelector('#ranWordContainer')
 var subRandomBtn = document.querySelector('#subRandomBtn')
+var punContainer = document.querySelector('#punContainer')
+
 
 
 var closeModal = document.querySelector('.close-modal')
 var randomModal = document.querySelector('.randomModal')
-closeModal.addEventListener('click', function(event){
-    event.preventDefault()
-    randomModal.classList.add('hidden')
-})
+// closeModal.addEventListener('click', function(event){
+//     event.preventDefault()
+//     randomModal.classList.add('hidden')
+// })
 
 
 var randomWord = ''
@@ -34,7 +35,7 @@ function randomWordFunction(){
         })
         .then (function(data){
             console.log(data.word)
-            // ranWordContainer.classList.remove('hidden')
+            ranWordContainer.classList.remove('hidden')
             rndWordDiv.textContent = ''
             rndJokeDiv.textContent = ''
             var ranWord = document.createElement('p')
@@ -68,7 +69,7 @@ function randomWordFunction(){
 
 subRandomBtn.addEventListener('click', function(event){
     event.preventDefault
-    randomModal.classList.remove('hidden')
+    // randomModal.classList.remove('hidden')
     randomWordFunction()
 })
 
@@ -104,5 +105,12 @@ function buttonClick(){
 }
 buttonClick()
 
+punContainer.addEventListener('click', function(event){
+    event.preventDefault()
+    punContainer.classList.add('hidden')
+})
 
-
+ranWordContainer.addEventListener('click', function(event){
+    event.preventDefault()
+    ranWordContainer.classList.add('hidden')
+})
