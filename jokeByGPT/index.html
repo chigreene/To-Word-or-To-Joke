@@ -156,7 +156,7 @@
       </div>
 
       <header class="my-10 mb-10">
-        <h2 class="text-6xl font-semibold">Jokes</h2>
+        <h2 class="text-6xl font-semibold text-white">Jokes</h2>
         <h3 class="text-3xl font-semibold border-fuchsia-300 text-white">
           Funny jokes made by AI.
         </h3>
@@ -195,12 +195,14 @@
                 name="inputText"
                 id="inputText"
               />
-              <button
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-400 dark:focus:ring-orange-700 transition ease-in shadow-md shadow-white"
-                id="submitBtn"
-              >
-                Get your joke!
-              </button>
+              <div class="btn-wrapper">
+                <button
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-400 dark:focus:ring-orange-700 transition ease-in shadow-md shadow-white"
+                  id="submitBtn"
+                >
+                  Get your joke!
+                </button>
+              </div>
             </div>
             <!-- <div id="jokeDiv"></div> -->
           </div>
@@ -242,12 +244,14 @@
                 with this word for you.
               </p>
 
-              <button
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-400 dark:focus:ring-orange-700 transition ease-in shadow-md shadow-white"
-                id="subRandomBtn"
-              >
-                Get you Joke!
-              </button>
+              <div class="btn-wrapper">
+                <button
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-400 dark:focus:ring-orange-700 transition ease-in shadow-md shadow-white"
+                  id="subRandomBtn"
+                >
+                  Get you Joke!
+                </button>
+              </div>
             </div>
             <!-- <div>
                 <div class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -315,6 +319,7 @@
       src="./assets/4k-bottom-clear-background.png"
       alt="synth-waves"
     />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
