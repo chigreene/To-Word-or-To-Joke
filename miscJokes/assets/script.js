@@ -52,7 +52,7 @@ btn.addEventListener('click',function(event){
 
 lastJokeBtn.addEventListener('click', function(event){
     event.preventDefault()
-   
+    lastJoke.classList.remove("hidden");
     console.log(array)
     renderHistory()
     

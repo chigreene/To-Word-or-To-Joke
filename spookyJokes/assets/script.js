@@ -127,7 +127,7 @@ btn.addEventListener('click',function(event){
 
 lastJokeBtn.addEventListener('click', function(event){
     event.preventDefault()
-    deliveryContainer.classList.remove('hidden')
+    lastJoke.classList.remove('hidden')
     renderHistory()
     renderDeliveryHistory()
 })
