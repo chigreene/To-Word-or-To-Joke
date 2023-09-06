@@ -44,7 +44,7 @@ function renderHistory() {
 
 btn.addEventListener('click',function(event){
     event.preventDefault()
-    if(array.length>5){
+    if(array.length>1){
         array.shift()
     }
     makeJoke()

@@ -116,7 +116,7 @@ showPunchLineBtn.addEventListener('click', function(event){
 
 btn.addEventListener('click',function(event){
     event.preventDefault()
-    if(array.length>5){
+    if(array.length>1){
         array.shift()
     }
     deliveryContainer.classList.add('hidden')

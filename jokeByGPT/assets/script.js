@@ -1,4 +1,4 @@
-const token = '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'
+const token = "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";
 var punRoot = 'apple'
 
 const ninjaKey = 'IohEAAZnqusKHO7llxCIdw==CwTa8bQlK72a3ruH'
@@ -51,7 +51,7 @@ function randomWordFunction(){
             },
             body: JSON.stringify({
             "model": "gpt-3.5-turbo",
-            "messages": [{"role": "assistant", "content": "Please, make a pun with this word" + randomWord}]
+            "messages": [{"role": "assistant", "content": "Please, this word in a joke," + randomWord}]
             })
             }) .then(function (response){
                     return response.json()
@@ -164,7 +164,7 @@ function buttonClick(){
             },
             body: JSON.stringify({
             "model": "gpt-3.5-turbo",
-            "messages": [{"role": "assistant", "content": "Use " + jokeInput + " in a pun"}]
+            "messages": [{"role": "assistant", "content": "Use " + jokeInput + " in a joke"}]
             })
         }) .then(function (response){
                 return response.json()
