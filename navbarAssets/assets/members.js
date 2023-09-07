@@ -1,8 +1,12 @@
 const userNameList = document.querySelector("#userNameList");
-const usernames = JSON.parse(localStorage.getItem("usernames")) || [];
+var localHistoryObject = JSON.parse(localStorage.getItem("user"))
+console.log(localHistoryObject)
+var users = document.createElement("p")
+const userArray = Object.keys(localHistoryObject)
+console.log(userArray) 
 
-userNameList.innerHTML = 
-usernames.map((username) => {
-    return `<p class="text-gray-900 text-center mt-5 mr-10"><i class="fa-solid fa-user-secret fa-beat fa-xl mr-5"></i> ${username} </p>`;
-  });
+// function renderUser() {
+
+//   for(let i = 0; i > localHistoryObject.length -1; i++)
+// }
 
