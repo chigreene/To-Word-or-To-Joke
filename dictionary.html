@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+
+    <body class="bg-slate-100">
+
+        <header class="flex justify-between text-white">
+            <h1>Word or To Joke</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Learn a Joke</a></li>
+                    <li><a href="#">Learn a Word</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    
+            <!-- Input for  -->
+        <section>
+                <label for="Dictionary">Dictionary</label>
+                <input type="text" class="clearable" id="Dictionary" name="Dictionary" 
+                placeholder="Search Dictionary" required size="100">
+                <button class="btn"  id="search" type="button"><i class="fa fa-search"></i></button>
+                <button class="btn" id="#WOD" type="button"><a href="#WOD">Word Of The Day</a></button>
+                <button class="btn" id="#games" type="button"><a href="#games">Games</a></button>
+                <button class="btn"  type="button"><a href="#">Examples</a></button>
+                <button class="btn" type="button"><a href="#null">Thesaurus</a></button>
+                <button class="btn"  type="button"><a href="#">More</a></button>
+        </section>
+       
+
+        <!-- Word of the Day -->
+        <section class="wordOfTheDay" id="WOD">
+            <p></p>
+        </section>
+
+        <section id="null">
+            <p></p>
+        </section>
+
+        <aside id="games">
+            <p></p>
+        </aside>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

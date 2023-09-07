@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+header {
+    background-color:brown;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    background-color:brown;
+    padding: 10px;
+    border-radius: 7px;
+    color:white;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 7px;
+    background-color:brown;
+    color:white;
+}
+
+.wordOfTheDay p {
+    outline: solid;
+    margin: 50px;
+    border-radius: 10px;
+    padding: 100px;
+    width: 50%;
+    height: 80vh;
+    position: relative;
+    
+}
+
+#null {
+    outline: solid;
+    margin: 50px;
+    border-radius: 10px;
+    padding: 100px;
+    width: 50%;
+}
+
+
+aside {
+    outline: solid;
+    margin: 50px;
+    border-radius: 10px;
+    padding: 100px;
+    width: 30%;
+    position: absolute;
+    bottom: 100px;
+    left: 900px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+    text-align: end;
+    padding: 7px;
+    margin-top: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+    height: 2px;
+    width: 50px;
+}
+
+
+main {
+    position: relative;
+    top: 50px;
+}
+
