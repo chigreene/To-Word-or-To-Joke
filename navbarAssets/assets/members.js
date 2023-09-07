@@ -2,8 +2,8 @@ const userNameList = document.querySelector("#userNameList");
 var localHistoryObject = JSON.parse(localStorage.getItem("user"))
 console.log(localHistoryObject)
 var users = document.createElement("p")
-const userArray = Object.keys(localHistoryObject)
-console.log(userArray) 
+const keys = Object.keys(localHistoryObject)
+console.log(keys) 
 
 // function renderUser() {
 
