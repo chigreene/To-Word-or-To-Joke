@@ -5,38 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Word or Joke</title>
   </head>
   <body class="bg-indigo-900">
-    <img class="w-full h-40 -z-10 fixed top-0" src="./assets/4k-top-clear-background.png" alt="synth-waves">
-    <div class="mb-40">
+    <!-- bubbles section -->
+    <!-- <section class="-z-10"></section> -->
+
+    
+    <img class="w-full h-40 -z-20 fixed top-0" src="./assets/4k-top-clear-background.png" alt="synth-waves" />
+    <div>
+    <!-- <div> -->
       <!--Content wrapper-->
-      <div>
-        <nav class="mt-20 flex justify-between">
-          
+      <div class="mb-20">
+        <nav class="mt-20 flex justify-between text-white">
           <div>
-            <h1 class="font-bold text-6xl ml-5 p-6 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg">
+            <h1
+              class="font-bold text-6xl ml-5 p-6 shadow-lg rounded-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500"
+            >
               <a href="/">Word or Joke</a>
             </h1>
           </div>
           <div class="flex items-center justify-between">
-            <ul class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in ">
+            <ul
+              class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in"
+            >
               <a href="../ChooseJokeType/index.html">
                 <li><span>Home</span></li>
               </a>
             </ul>
-            <ul class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in">
+            <ul
+              class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in"
+            >
               <a href="#">
                 <li><span>Word</span></li>
               </a>
             </ul>
-            <ul class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in">
+            <ul
+              class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in"
+            >
               <a href="#">
                 <li><span>About</span></li>
               </a>
             </ul>
-            <ul class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in">
+            <ul
+              class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in"
+            >
               <a href="#">
                 <li><span>Contact</span></li>
               </a>
@@ -45,11 +59,18 @@
         </nav>
       </div>
       <!--End Nav Bar-->
-
-      <main class="text-white px-16 py-6">
-        <div class="my-5 mt-10 ">
-          <a class="mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in" href="#">Log in</a>
-          <a class="mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in" href="#">Sign up</a>
+    <main>
+      <div class="ml-20">
+      <a
+          class="mr-5 px-3 py- shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in"
+          href="#"
+          >Log in</a
+        >
+        <a
+          class="mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in"
+          href="#"
+          >Sign up</a
+        >
 <!-- dropdown -->
           
           <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="float-right shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Type of Joke <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -81,16 +102,18 @@
                 </li>
               </ul>
           </div>
+          </div>
 <!-- dropdown -->
         </div>
 
-
-        <header>
-          <h2 class="mt-10 text-6xl font-semibold">Jokes</h2>
-          <h3 class="text-3xl font-semibold text-white">Funny code related one liners</h3>
+      
+        <header class="ml-20 mt-10">
+          <h2 class="text-6xl font-semibold text-white">Jokes</h2>
+          <h3 class="text-3xl font-semibold text-white">Punny Jokes</h3>
         </header>
         <div>
-          <div class="shadow-xl shadow-white flex flex-row flex-wrap justify-between lg:w-4/5 xl:w-4/5 m-auto mt-10 p-10 border-4 border-orange-400 rounded-3xl">
+          
+          <div class="shadow-xl bg-indigo-900 flex flex-row flex-wrap justify-between lg:w-4/5 xl:w-4/5 m-auto mt-10 p-10 border-4 border-orange-400 rounded-3xl">
             <div class="w-full bg-gradient-to-r from-violet-500 to-fuchsia-500 m-auto p-10 rounded-3xl ">
               <!-- card go here-->
               <img class="m-auto pb-10 " src="./assets/css-gif.gif" alt="CSS GIF" />
@@ -101,14 +124,18 @@
             </div>
           </div>
         </div>
-        <div class="mb-20">
-          <h3 class="text-4xl font-semibold mt-20 border-b" id="lastJokeContainer">Need to hear it again???</h3>
-          <button class="mt-10 mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in" id="lastJokeBtn">RePlay Last Joke</button>
+        <div class="mb-40">
+          <h3 class="ml-5 text-4xl font-semibold mt-20 border-b text-white" id="lastJokeContainer">Need to hear it again???</h3>
+          <button class="ml-10 mt-10 mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in" id="lastJokeBtn">RePlay Last Joke</button>
           <div class="hidden mx-10 mt-10 text-xl text-white p-6 shadow-lg rounded-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500" id="lastJoke"></div>
         </div>
       </main>
-    </div>
-    <img class="-z-10 w-full h-80 fixed bottom-0" src="./assets/4k-bottom-clear-background.png" alt="synth-waves">
+      <img
+      class="-z-20 w-full h-80 fixed bottom-0"
+      src="./assets/4k-bottom-clear-background.png"
+      alt="synth-waves"
+    />
+    <!-- </div> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>

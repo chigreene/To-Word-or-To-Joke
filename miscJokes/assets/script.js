@@ -7,7 +7,7 @@ var array = JSON.parse(localStorage.getItem('jokeHistory')) || [];
 
 
 function makeJoke(){
-    var url = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,racist,sexist,explicit&type=single';
+    var url = 'https://v2.jokeapi.dev/joke/Miscellaneous?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single';
 
     
 

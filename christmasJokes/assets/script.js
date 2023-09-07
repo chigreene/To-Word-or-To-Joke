@@ -9,7 +9,7 @@ var array = JSON.parse(localStorage.getItem('setupHistory')) || [];
 var deliveryArray = JSON.parse(localStorage.getItem('deliveryJokeHistory')) || [];
 
 function makeJoke(){
-    var url = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart';
+    var url = 'https://v2.jokeapi.dev/joke/Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
 
     
 
@@ -73,8 +73,10 @@ function renderDeliveryHistory() {
 
 showPunchLineBtn.addEventListener('click', function(event){
     event.preventDefault()
+    
+    deliveryContainer.classList.remove('hidden')
 
-// confetti effect
+    // confetti effect
     var count = 200;
     var defaults = {
       origin: { y: 1.0 },
@@ -110,13 +112,11 @@ showPunchLineBtn.addEventListener('click', function(event){
       spread: 120,
       startVelocity: 45,
     });
-
-    deliveryContainer.classList.remove('hidden')
 })
 
 btn.addEventListener('click',function(event){
     event.preventDefault()
-    if(array.length>5){
+    if(array.length>1){
         array.shift()
     }
     deliveryContainer.classList.add('hidden')

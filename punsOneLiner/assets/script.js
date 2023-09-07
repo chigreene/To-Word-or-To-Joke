@@ -7,7 +7,7 @@ var array = JSON.parse(localStorage.getItem('jokeHistory')) || [];
 
 
 function makeJoke(){
-    var url = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,racist,sexist,explicit&type=single';
+    var url = 'https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single';
 
     
 
@@ -44,7 +44,7 @@ function renderHistory() {
 
 btn.addEventListener('click',function(event){
     event.preventDefault()
-    if(array.length>1){
+    if(array.length>5){
         array.shift()
     }
     makeJoke()
@@ -52,8 +52,27 @@ btn.addEventListener('click',function(event){
 
 lastJokeBtn.addEventListener('click', function(event){
     event.preventDefault()
-    lastJoke.classList.remove("hidden");
+    lastJoke.classList.remove('hidden')
     console.log(array)
     renderHistory()
     
 })
+
+
+// bubbles
+function createBubble() {
+  const section = document.querySelector("section");
+  const createElement = document.createElement("span");
+  var size = Math.random() * 60;
+
+  createElement.style.width = 20 + size + "px";
+  createElement.style.height = 20 + size + "px";
+  createElement.style.left = Math.random() * innerWidth + "px";
+  section.appendChild(createElement);
+
+  setTimeout(() => {
+    createElement.remove();
+  }, 4000);
+}
+
+setInterval(createBubble, 50);
