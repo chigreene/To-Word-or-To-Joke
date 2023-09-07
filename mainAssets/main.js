@@ -12,12 +12,12 @@ function getApi() {
         console.log(data)
         randomWord.textContent = ''
         var word = document.createElement('p');
-            word.textContent = data.word
+            word.textContent = data[0]
             randomWord.append(word)
     })
 
 }
 
-document.addEventListener("load", getApi)
+document.addEventListener("DOMContentLoaded", getApi)
 
 getApi()
