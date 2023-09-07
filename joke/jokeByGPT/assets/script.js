@@ -68,7 +68,7 @@ function randomWordFunction(){
 }
 
 subRandomBtn.addEventListener('click', function(event){
-    event.preventDefault
+    event.preventDefault();
 
 // confetti effect
     var count = 200;
