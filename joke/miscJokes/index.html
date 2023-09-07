@@ -3,19 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/styles.css" />
     <title>Word or Joke</title>
   </head>
-  <body class="bg-indigo-900 text-white">
-    <!-- snow div -->
-    <div class="wrapper">
-    <div class="snowflake"></div>
-    </div>
+  <body class="bg-indigo-900">
     <img class="w-full h-40 -z-10 fixed top-0" src="./assets/4k-top-clear-background.png" alt="synth-waves">
-    <div class="mb-40 ">
+    <div class="mb-40">
       <!--Content wrapper-->
       <div>
         <nav class="mt-20 flex justify-between">
@@ -52,9 +47,9 @@
       <!--End Nav Bar-->
 
       <main class="text-white px-16 py-6">
-        <div class="mt-10 mb-10">
-          <a class="mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in" href="#">Log in</a>
-          <a class="mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in" href="#">Sign up</a>
+        <div class="my-5">
+          <a class="mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in" href="../../navbarAssets/login.html">Log in</a>
+          <a class="mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in" href="../../navbarAssets/login.html">Sign up</a>
 <!-- dropdown -->
           
           <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="float-right shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Type of Joke <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -67,10 +62,10 @@
                   <a href="../punsOneLiner/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pun</a>
                 </li>
                 <li>
-                  <a href="../christmasJokes/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Christmas</a>
+                  <a href="../christmasJokes/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Christmas</a>
                 </li>
                 <li>
-                  <a href="../spookyJokes/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Spooky</a>
+                  <a href="../spookyJokes/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Spooky</a>
                 </li>
                 <li>
                   <a href="../jokeByGPT/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">AI Generated</a>
@@ -89,41 +84,31 @@
 <!-- dropdown -->
         </div>
 
-        <header class="text-white">
+
+        <header>
           <h2 class="text-6xl font-semibold">Jokes</h2>
-          <h3 class="text-3xl font-semibold border-b">Christmas Jokes</h3>
+          <h3 class="text-3xl font-semibold text-white">Funny miscellaneous one liners</h3>
         </header>
-        <div class="mb-20 text-white">
-          <h4 class="font-bold mt-12 pb-4 ">Ready for a joke?</h4>
-          <div class="shadow-xl shadow-white flex flex-row flex-wrap justify-between lg:w-4/5 xl:w-4/5 m-auto mt-20 p-10 border-4 border-orange-400 rounded-3xl">
-          <div class="w-full bg-gradient-to-r from-violet-500 to-fuchsia-500 m-auto p-10 rounded-3xl">
-            <!-- card go here-->
-            <img class="m-auto " src="https://gifdb.com/images/high/pepe-the-frog-comfy-christmas-meme-xa624q2ki4trgouw.gif" alt="everything is fine" />
-            <div id="jokeContainer" class="text-gray-200 text-sm sm:text-lg md:text-xl lg:text-2xl my-5"></div>
-            <div id="deliveryContainer" class="hidden text-gray-100 text-sm sm:text-lg md:text-xl lg:text-2xl mb-5"></div>
-            <div class="flex flex-row justify-evenly">
-              <div >
-                <p  ></p>
-                <button class="inline-flex items-center mt-5 px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-400 dark:focus:ring-orange-700 transition ease-in tracking-wider" id="btn">Click for Joke</button>
-              </div>
+        <div>
+          <div class="shadow-xl shadow-white flex flex-row flex-wrap justify-between lg:w-4/5 xl:w-4/5 m-auto mt-10 p-10 border-4 border-orange-400 rounded-3xl">
+            <div class="w-full bg-gradient-to-r from-violet-500 to-fuchsia-500 m-auto p-10 rounded-3xl ">
+              <!-- card go here-->
+              <img class="m-auto pb-10 " src="../miscJokes/assets/codWorksGIF.gif" alt="CSS GIF" />
               <div>
-                <p class="text-gray-100 text-sm sm:text-lg md:text-xl lg:text-2xl" id="jokeContainer"></p>
-                <button class="inline-flex items-center mt-5 px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-400 dark:focus:ring-orange-700 transition ease-in tracking-wider" id="showPunchLineBtn">Show Punch Line</button>
+                <p class="text-gray-100 text-sm sm:text-lg md:text-xl lg:text-2xl mb-5" id="jokeContainer"></p>
+                <button class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-400 dark:focus:ring-orange-700 transition ease-in tracking-wider" id="btn">Click for Joke</button>
               </div>
             </div>
           </div>
         </div>
-        </div>
-        <div>
-          <h3 class="text-4xl font-semibold mt-20 border-b text-white" id="lastJokeContainer">Need to hear it again???</h3>
+        <div class="mb-20">
+          <h3 class="text-4xl font-semibold mt-20 border-b" id="lastJokeContainer">Need to hear it again???</h3>
           <button class="mt-10 mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition ease-in" id="lastJokeBtn">RePlay Last Joke</button>
           <div class="hidden mx-10 mt-10 text-xl text-white p-6 shadow-lg rounded-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500" id="lastJoke"></div>
         </div>
       </main>
     </div>
-    
     <img class="-z-10 w-full h-80 fixed bottom-0" src="./assets/4k-bottom-clear-background.png" alt="synth-waves">
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
