@@ -22,7 +22,7 @@ saveUserName = e => {
 
     user.push(userEntry)
 
-    user.splice(5)
+    // user.splice(5)
 
     localStorage.setItem("user", JSON.stringify(user))
     window.location.assign("./members.html")
