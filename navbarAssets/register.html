@@ -10,45 +10,52 @@
 </head>
 <body class="bg-gray-900">
 
-    <nav class="bg-white">
+    <!-- Navbar created with html and tailwind css -->
+    <nav class="bg-white ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="./main.html" class="flex items-center">
+
+          <!-- Picture and text are a way back to the main page -->
+          
+          <a href="../main.html" class="flex items-center">
               <img src="./images/Header-Icon.jpeg" class="h-8 mr-3" alt="Emoji with book" />
               <span class="self-center text-2xl font-semibold whitespace-nowrap">To Word or To Joke</span>
           </a>
-          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          
+          <div class=" w-full md:block md:w-auto" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border  md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+                <!-- Link to go to registration page -->
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded ">Register</a>
+                    <a href="./register.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded ">Register</a>
                 </li>
+                <!-- Link to go to Members List page -->
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded">Members List</a>
+                    <a href="./members.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded">Members List</a>
                 </li>
+                <!-- Link to go to Contact Us page -->
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-900">Contact Us</a>
+                    <a href="./contactUs.html" class="block py-2 pl-3 pr-4 text-gray-900">Contact Us</a>
                 </li>
                 </ul>
           </div>
         </div>
     </nav>
 
+    <!-- Form for user to add their username and password in order to be added to the Members List -->
     <div class="flex h-screen items-center justify-center">
         <div class="w-96 p-6 shadow-lg bg-orange-500 rounded-md">
             <h1 class="text-3xl block text-center font-semibold"><i class="fa-solid fa-user-tie fa-flip mr-5"></i> Register</h1>
             <hr class="mt-3">
+            <!-- Username input -->
             <div class="mt-3">
                 <label for="username" class="block text-base mb-2">Username</label>
                 <input type="text" id="username" class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-black-900" placeholder="Enter Username">
             </div>
+            <!-- Password Input -->
             <div class="mt-3">
                 <label for="password" class="block text-base mb-2">Password</label>
                 <input type="password" id="password" class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-black-900" placeholder="Enter Password">
             </div>
+            <!-- Submit button -->
             <div class="mt-3 flex justify-center items-center">
                 <div id="username" class="mt-5 ">
                     <button id="submit-btn" type="submit" onclick="saveUserName(event)" disabled class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
@@ -56,12 +63,14 @@
                       </button>         
                </div>
             </div>
+            <!-- Alert for the user to be aware their username will be added to the members list -->
             <p class= "font-light text-gray-700 text-sm mt-5">*This form is to be added onto the members list*</p>
         </div>
     </div>
 
+    <!-- Javascript Tag -->
     <script src="./assets/registration.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
+    <!-- Confetti Button Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 </body>
 </html>
