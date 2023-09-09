@@ -1,6 +1,7 @@
 var searchDictionary = $('#Dictionary');
 var searchBtn = $('#search');
 var defCont = $('.defContainer');
+var fbeeURL = $('#gameURL');
 
 
 searchBtn.on('click', function(event) {
@@ -37,15 +38,16 @@ function getApi() {
     })
 }
 
-// function getApi() {
-//     var freebeeURL = '/cgi-bin/today';
-//     fetch(requestUrl)
-//     .then(function (response) {
-//         console.log(response);
-//         return response.json();
-//     })
-//     .then(function (data) {
-//         console.log(data);
-// })
+function getFreeBeeApi() {
+    var fbeeURL = '/cgi-bin/today';
+    //fetch request
+    fetch(freebeeURL)
+    .then(function (response) {
+        console.log(response);
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+})
 
-// }
+}
