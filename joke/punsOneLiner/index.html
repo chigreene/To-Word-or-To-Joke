@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Word or Joke</title>
+  </head>
+  <body class="bg-indigo-900">
+    <!-- bubbles section -->
+    <!-- <section class="-z-10"></section> -->
+
+    
+    <img class="w-full h-40 -z-20 fixed top-0" src="./assets/4k-top-clear-background.png" alt="synth-waves" />
+    <div>
+    <!-- <div> -->
+      <!--Content wrapper-->
+      <div class="mb-20">
+        <nav class="mt-20 flex justify-between text-white">
+          <div>
+            <h1
+              class="font-bold text-6xl ml-5 p-6 shadow-lg rounded-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500"
+            >
+              <a href="../../main.html">Word or Joke</a>
+            </h1>
+          </div>
+          <div class="flex items-center justify-between">
+            <ul
+              class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in"
+            >
+              <a href="../ChooseJokeType/index.html">
+                <li><span>Home</span></li>
+              </a>
+            </ul>
+            <ul
+              class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in"
+            >
+              <a href="#">
+                <li><span>Word</span></li>
+              </a>
+            </ul>
+            <ul
+              class="m-2.5 px-5 py-2.5 text-3xl shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg hover:text-2xl ease-in"
+            >
+              <a href="../../navbarAssets/contactUs.html">
+                <li><span>Contact</span></li>
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--End Nav Bar-->
+    <main>
+      <div class="ml-20">
+      <a
+          class="mr-5 px-3 py- shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-2.5 text-center transition ease-in"
+          href="../../navbarAssets/login.html"
+          >Log in</a
+        >
+        <a
+          class="mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-2.5 text-center transition ease-in"
+          href="../../navbarAssets/login.html"
+          >Sign up</a
+        >
+<!-- dropdown -->
+          
+          <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="float-right shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Type of Joke <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg></button>
+          <!-- Dropdown menu -->
+          <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-orange-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                <li>
+                  <a href="../punsOneLiner/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pun</a>
+                </li>
+                <li>
+                  <a href="../christmasJokes/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Christmas</a>
+                </li>
+                <li>
+                  <a href="../spookyJokes/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Spooky</a>
+                </li>
+                <li>
+                  <a href="../jokeByGPT/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">AI Generated</a>
+                </li>
+                <li>
+                  <a href="../miscJokes/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Misc</a>
+                </li>
+                <li>
+                  <a href="../programmingOneLiners/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programming One Liners</a>
+                </li>
+                <li>
+                  <a href="../programmingSetUpJokes/index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programming</a>
+                </li>
+              </ul>
+          </div>
+          </div>
+<!-- dropdown -->
+        </div>
+
+      
+        <header class="ml-20 mt-10">
+          <h2 class="text-6xl font-semibold text-white">Jokes</h2>
+          <h3 class="text-3xl font-semibold text-white">Punny Jokes</h3>
+        </header>
+        <div>
+          
+          <div class="shadow-xl bg-indigo-900 flex flex-row flex-wrap justify-between lg:w-4/5 xl:w-4/5 m-auto mt-10 p-10 border-4 border-orange-400 rounded-3xl">
+            <div class="w-full bg-gradient-to-r from-violet-500 to-fuchsia-500 m-auto p-10 rounded-3xl ">
+              <!-- card go here-->
+              <img class="m-auto pb-10 " src="./assets/css-gif.gif" alt="CSS GIF" />
+              <div>
+                <p class="text-gray-100 text-sm sm:text-lg md:text-xl lg:text-2xl mb-5" id="jokeContainer"></p>
+                <button class="inline-flex items-center px-3 py-2 text-sm text-xl text-center text-white bg-orange-400 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-400 dark:focus:ring-orange-700 transition ease-in tracking-wider" id="btn">Click for Joke</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-40">
+          <h3 class="ml-5 text-4xl font-semibold mt-20 border-b text-white" id="lastJokeContainer">Need to hear it again???</h3>
+          <button class="ml-10 mt-10 mr-5 px-3 py-1 shadow-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:ring-4 focus:outline-none focus:ring-blue-300 text-xl rounded-lg text-sm px-5 py-2.5 text-center transition ease-in" id="lastJokeBtn">RePlay Last Joke</button>
+          <div class="hidden mx-10 mt-10 text-xl text-white p-6 shadow-lg rounded-lg shadow-white text-white bg-gradient-to-r from-violet-500 to-fuchsia-500" id="lastJoke"></div>
+        </div>
+      </main>
+      <img
+      class="-z-20 w-full h-80 fixed bottom-0"
+      src="./assets/4k-bottom-clear-background.png"
+      alt="synth-waves"
+    />
+    <!-- </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
