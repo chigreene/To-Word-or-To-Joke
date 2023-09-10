@@ -4,13 +4,11 @@
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 30px;
-}
-
 header {
     background-color:brown;
 }
+
+
 
 input[type="text"] {
     border: 1px solid black;
@@ -38,24 +36,31 @@ label{
     color:white;
 }
 
-.wordOfTheDay p {
-    outline: solid;
-    margin: 50px;
-    border-radius: 10px;
-    padding: 100px;
-    width: 50%;
-    height: 80vh;
-    position: relative;
-    
+.secBack {
+    padding:7px 0px;
 }
 
-#null {
+#word {
+    font-weight: bolder;
+}
+
+
+.wordOfTheDay {
+    outline: solid;
+    margin: 50px;
+    border-radius: 10px;
+    padding: 80px;
+    width: 50%;
+    position: relative;
+}
+
+/* #null {
     outline: solid;
     margin: 50px;
     border-radius: 10px;
     padding: 100px;
     width: 50%;
-}
+} */
 
 
 aside {
