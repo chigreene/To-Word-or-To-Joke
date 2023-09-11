@@ -10,6 +10,8 @@ Our project presents the user with two options to pass their free time. There ar
 - This web site solves the problem of being able to look up words and get there definition and also to find fun jokes to share with your friends. 
 - We learned how to use local storage, API, and the Tailwind CSS framework. 
 
+GitHub link: https://github.com/chigreene/To-Word-or-To-Joke
+
 URL: http://127.0.0.1:5500/Whimsical-Education/index.html
 
 ![homePage](./assets/toWordorJokeHomePage.png)
