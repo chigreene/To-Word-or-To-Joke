@@ -1,4 +1,4 @@
-const token = "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";
+const token = "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";
 var punRoot = 'apple'
 
 const ninjaKey = 'IohEAAZnqusKHO7llxCIdw==CwTa8bQlK72a3ruH'
